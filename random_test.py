@@ -1,3 +1,4 @@
+print(ranNums) #print the list!
 import ast
 import part1 # Assumes student code is in part1.py
 import random
@@ -31,3 +32,4 @@ def test_random_list():
     print("Test Passed!")
 
 if __name__ == "__main__":
+    test_random_list()
