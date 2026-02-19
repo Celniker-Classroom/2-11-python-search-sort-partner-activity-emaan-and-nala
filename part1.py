@@ -7,7 +7,7 @@ ranNums = [] #name your list and make sure it is empty!
 
 
 # Generates a list of 5 or 10 random integers between 1 and 50 inclusive.
-for num in range(5): #for loop appends 5 numbers to your list, but make sure you name your variable
+for num in range(10): #for loop appends 5 numbers to your list, but make sure you name your variable
     ranNums.append(randint(1, 50)) #this adds a random number between 1-50 to the list
 
 print(ranNums)
