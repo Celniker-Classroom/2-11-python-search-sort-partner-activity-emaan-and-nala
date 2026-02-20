@@ -12,16 +12,7 @@ print("generated list:", ranNums)
 random_number = randint(1, 50) # picks random number
 print("Searching for", random_number)
 
-comparisons = 0  # Initialize the counter for comparisons
-found = False  # Variable to track if the number was found
-
-for num in ranNums:  # Name your variable in the for loop
-    comparisons += 1  # Increment the counter for each comparison
-    if num == random_number:
-        found = True  # Set found to True if the number is in the list
-        break  # Exit the loop early if the number is found
-
 if random_number in ranNums:
-    print("Number", random_number,"found in the list after", comparisons, "comparisons")
+    print("Number", random_number,"found in the list")
 else:
-    print("Number", random_number,"not found in the list after", comparisons, "comparisons")
+    print("Number", random_number,"not found in the list")
