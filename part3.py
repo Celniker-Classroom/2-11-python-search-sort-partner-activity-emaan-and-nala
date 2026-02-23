@@ -7,7 +7,6 @@ ranNums = [] #name your list and make sure it is empty!
 for num in range(10): #for loop appends 5 numbers to list
     ranNums.append(randint(1, 50)) # adds a random number between 1-50 to the list
 
-
 random_number = int(input("Enter a random number between 1 and 50:"))
 print("generated list:", ranNums)
 print("Searching for", random_number)
@@ -28,18 +27,26 @@ sum = 0
 for num in ranNums:
     sum += num
 
-middle = int(len(ranNums) / 2)
-halved = ranNums[:middle]
-print("The list split in half is", halved)
-
-ranNums.extend(ranNums)
-print(ranNums)
-ranNums = 
 if random_number in ranNums:
     print("Number", random_number,"found in the list after", comparisons, "comparisons. The smallest number in the list is", smallest)
 else:
     print("Number", random_number,"not found in the list after", comparisons, "comparisons. The smallest number in the list is", smallest)
-print("The biggest number is", biggest,". The sum of the numbers in the list is", sum)
+print("The biggest number is", biggest,".The sum of the numbers in the list is", sum)
+
+
+middle = int(len(ranNums) / 2) # makes another list of ranNums split in half
+halved = ranNums[:middle]
+print("The list split in half is", halved)
+
+average = sum / int(len(ranNums)) # finds average
+print("The average of all the numbers in the list is", average)
+
+print("These are all the even values in the list")
+for num in ranNums: # prints even values
+    if num % 2 == 0:
+        print(num)
 
 ranNums.sort()
 print("This is the list sorted:", ranNums)
+
+
